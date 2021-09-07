@@ -15,7 +15,8 @@ int main()
     
     set<int> s(a, a+n);
     set<int>::iterator itr = s.begin(); 
-    advance(itr, k-1); 
+    advance(itr, k-1); //for kth min
+    advance(itr ,n-k); //for kth max
  
     cout << *itr << "\n";
  
